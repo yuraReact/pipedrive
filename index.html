@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Job Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button class="newJobButton">NEW Create a job</button>
+
+<div class="myModal modal">
+    <div class="modal-content">
+        <div class="header">
+            <span class="close">&times;</span>
+           <h2>NEW Create a job</h2>
+        </div>
+        <div class="upper-row">
+            <div class="clientDetails section">
+                <h2>Client details</h2>
+                <div class="input-group">
+                    <input type="text" class="firstName" placeholder="First name">
+                    <input type="text" class="lastName" placeholder="Last name">
+                </div>
+                <div class="input-group">
+                    <input type="tel" class="phoneNumber" placeholder="Phone">
+                    <input type="email" class="email" placeholder="Email (optional)">
+                </div>
+            </div>
+    
+            <div class="jobType section">
+                <h2>Job Type</h2>
+                <div class="input-group">
+                    <select  class="jobTypeSelect">
+                        <option value="" disabled selected>Job type</option>
+                        <option value="option1">Recall job</option>
+                        <option value="option2">Precision job</option>
+                    </select>
+                    <select  class="jobTypeSelect2">
+                        <option value="" disabled selected>Job source</option>
+                        <option value="option1">Linkdedln</option>
+                        <option value="option2">Indeed</option>
+                    </select>
+                </div>
+                <textarea class="jobDescription" placeholder="Job Description (optional)"></textarea>
+            </div>
+        </div>
+    
+        <div class="lower-row">
+            <div class="serviceLocation section">
+                <h2>Service Location</h2>
+                <div class="input-group">
+                    <input type="text" class="address" placeholder="Address">
+                    <input type="text" class="city" placeholder="City">
+                    <input type="text" class="state" placeholder="State">
+                </div>
+                <div class="withzip">
+                    <div class="input-group">
+                        <input type="text" class="zipCode" placeholder="Zip Code">
+                        <select class="countrySelect">
+                            <option value="" disabled selected>Area</option>
+                            <option value="country1">USA</option>
+                            <option value="country2">UK</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="scheduled section">
+                <h2>Scheduled</h2>
+                <input  type="date" class="date">
+                <div class="input-group">
+                    <div class="time">
+                        <select name="startTime" class="hours">
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                        </select>
+                        <select name="endTime" class="hours">
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                        </select>
+                    </div>
+                    <select>
+                        <option value="" disabled selected>Test select</option>
+                        <option value="Vasya Pupkin">Vasya Pupkin</option>
+                        <option value="John Doe">John Doe</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button style="background-color: yellow;">Create job</button>
+            <button style="background-color: darkgray;">Save info</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
